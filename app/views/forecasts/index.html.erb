@@ -1,0 +1,9 @@
+<h1>Weather Info</h1>
+<p>Current temperature: <%= @temperature %></p>
+<h2>5 day forecast:</h2>
+<ul>
+  <% @forecast_days[0..4].each do |forecast_day| %>
+    <li><%= forecast_day["date"] %>: High <%= forecast_day["high"] %> - Low <%= forecast_day["low"] %></li>
+  <% end %>
+</ul>
+<% console %>
